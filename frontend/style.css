@@ -72,3 +72,15 @@ label span { display:block; color:var(--soft); font-size:.875em }
 .kicker {letter-spacing:.26em}
 #workspace {background:repeating-linear-gradient(0deg,transparent 0 31px,var(--tint) 31px 32px)}
 @media(max-width:720px){.shell{display:block}}
+
+.ledger-col {display:grid; gap:clamp(1rem,2.5vw,2.5rem); min-width:0}
+.badge {display:inline-block; font-size:.72em; font-weight:700; padding:.12rem .55rem; border-radius:999px;
+  border:1px solid var(--line); vertical-align:middle; margin-inline-start:.35rem; color:var(--button-text)}
+.badge.ready {background:oklch(45% .12 150)}
+.badge.review {background:oklch(50% .15 70)}
+.badge.superseded {background:var(--soft)}
+.badge.signed {background:var(--accent)}
+.plan-review {border-inline-start:3px solid oklch(55% .15 70)}
+.plan-signed {opacity:.92}
+form.sign {margin-top:.7rem; display:flex; gap:.6rem; align-items:center; flex-wrap:wrap}
+form.sign .status {flex-basis:100%}
